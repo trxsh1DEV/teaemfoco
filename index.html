@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" media="screen">
+    <!-- Internal -->
+  <link rel="stylesheet" href="./assets/styles/variables.css">
+  <link rel="stylesheet" href="./assets/styles/elements.css">
+  <link rel="stylesheet" href="./assets/styles/classes.css">
+  <link rel="stylesheet" href="./assets/styles/menu.css">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" href="./assets/styles/carousel.css">
+  <title>Landing Page</title>
+</head>
+
+<body class="main-bg">
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <!-- <label class="close-menu-label" for="close-menu" title="close menu"></label> -->
+
+  <label class="menu-lines" for="close-menu" title="close menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <aside class="menu white-bg">
+    <section id="testando" class="main-content menu-content">
+      <h1>
+        <a href="#home" onclick=positionPage()>LOGO</a>
+      </h1>
+
+      <nav>
+        <ul onclick=positionPage()>
+          <li><a href="#intro">O que é TEA</a></li>
+          <li><a href="#grid-one">Sobre o projeto</a></li>
+          <li><a href="#gallery">Nosso Blog</a></li>
+          <li><a href="">|</a></li>
+          <li><a href="#pricing">Doações</a></li>
+          <li><a href="#contact">Como participar ?</a></li>
+        </ul>
+      </nav>
+    </section>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <!-- Carousel -->
+
+  <div class="hero-slider" carousel>
+
+    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/boy-1209964_1920.jpg');">
+        <div class="gradient"></div>
+        <div class="info-container">
+            <h3 class="header">#education4all</h3>
+            <h2 class="text">Educação para todos</h2>
+            <button>Conheça mais!</button>
+        </div>
+
+    </div>
+
+    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/girl-3194977_1920.jpg');">
+        <div class="gradient"></div>
+        <div class="info-container">
+            <h3 class="header">#somostodosiguais</h3>
+            <h2 class="text">O que nós queremos?</h2>
+            <button>Saiba mais sobre</button>
+        </div>
+
+    </div>
+
+    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/hands-2847508_1920.jpg');">
+        <div class="gradient"></div>
+        <div class="info-container">
+            <h3 class="header">#nospodemos</h3>
+            <h2 class="text">Capacitação profissional</h2>
+            <button>Quer saber como ajudar!</button>
+        </div>
+
+    </div>
+
+    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/kids-2237119_1920.jpg');">
+        <div class="gradient"></div>
+        <div class="info-container">
+            <h3 class="header">#business4tea</h3>
+            <h2 class="text">Empresas podem participar?</h2>
+            <button>Clique para saber mais!</button>
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- Fim carousel -->
+
+  <a class="back-to-top" href="#">➤</a>
+  <script src="./assets/js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
