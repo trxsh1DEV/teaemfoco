@@ -1,6 +1,13 @@
 .main-bg {
-    background: 
-    url('../uploads/images/ruido.png'),
+    background: url('../uploads/images/svg/roxo.svg'),
+    linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.secondary-bg {
+    background: url('../uploads/images/svg/secondary-bg.svg'),
     linear-gradient(50deg,#ff4169,#7c26f8);
     background-attachment: fixed;
     background-size: cover;
@@ -10,6 +17,11 @@
 .white-bg {
     background: var(--white-color);
     color: var(--primary-color);
+}
+
+.dark-bg {
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 
 .main-content {

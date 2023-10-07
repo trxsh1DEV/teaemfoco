@@ -50,7 +50,7 @@ function positionPage() {
 }
 
 function setBgPosition(slide, index) {
-    const x = -(slide.target + flkty.x) / 5;
+    const x = -(slide.target + flkty.x) / 4;
     slides[index].style.backgroundPosition = `${x}px`;
 }
 

@@ -1,109 +1,336 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- External -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" media="screen">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css"
+      media="screen"
+    />
     <!-- Internal -->
-  <link rel="stylesheet" href="./assets/styles/variables.css">
-  <link rel="stylesheet" href="./assets/styles/elements.css">
-  <link rel="stylesheet" href="./assets/styles/classes.css">
-  <link rel="stylesheet" href="./assets/styles/menu.css">
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <link rel="stylesheet" href="./assets/styles/carousel.css">
-  <title>Landing Page</title>
-</head>
+    <link rel="stylesheet" href="./assets/styles/variables.css" />
+    <link rel="stylesheet" href="./assets/styles/elements.css" />
+    <link rel="stylesheet" href="./assets/styles/classes.css" />
+    <link rel="stylesheet" href="./assets/styles/menu.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/carousel.css" />
+    <link rel="stylesheet" href="./assets/styles/card-effect.css" />
+    <title>Landing Page</title>
+  </head>
 
-<body class="main-bg">
+  <body class="main-bg">
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <!-- <label class="close-menu-label" for="close-menu" title="close menu"></label> -->
 
-  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-  <!-- <label class="close-menu-label" for="close-menu" title="close menu"></label> -->
+    <label class="menu-lines" for="close-menu" title="close menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <aside class="menu white-bg">
+      <section class="main-content menu-content">
+        <h1>
+          <a href="#home" onclick="positionPage()">LOGO</a>
+        </h1>
 
-  <label class="menu-lines" for="close-menu" title="close menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <aside class="menu white-bg">
-    <section id="testando" class="main-content menu-content">
-      <h1>
-        <a href="#home" onclick=positionPage()>LOGO</a>
-      </h1>
+        <nav>
+          <ul onclick="positionPage()">
+            <li><a href="#what-is-tea">O que é TEA</a></li>
+            <li><a href="#about-project">Sobre o projeto</a></li>
+            <li><a href="#blog">Nosso Blog</a></li>
+            <li><a href="">|</a></li>
+            <li><a href="#pricing">Doações</a></li>
+            <li><a href="#contact">Como participar ?</a></li>
+          </ul>
+        </nav>
+      </section>
+    </aside>
 
-      <nav>
-        <ul onclick=positionPage()>
-          <li><a href="#intro">O que é TEA</a></li>
-          <li><a href="#grid-one">Sobre o projeto</a></li>
-          <li><a href="#gallery">Nosso Blog</a></li>
-          <li><a href="">|</a></li>
-          <li><a href="#pricing">Doações</a></li>
-          <li><a href="#contact">Como participar ?</a></li>
-        </ul>
-      </nav>
+    <div class="menu-spacing"></div>
+
+    <!-- Carousel -->
+
+    <div id="home" class="hero-slider" carousel>
+
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url('./assets/uploads/images/carousel/girl-3194977_1920.jpg');
+        "
+      >
+        <div class="gradient"></div>
+        <div class="info-container">
+          <h3 class="header">#somostodosiguais</h3>
+          <h2 class="text">O que nós queremos?</h2>
+          <button id="btn-objective" onclick="redirectElements('objective')">
+            Saiba mais sobre!
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url('./assets/uploads/images/carousel/boy-1209964_1920.jpg');
+        "
+      >
+        <div class="gradient"></div>
+        <div class="info-container">
+          <h3 class="header">#education4all</h3>
+          <h2 class="text">Educação para todos</h2>
+          <button>Conheça mais!</button>
+        </div>
+      </div>
+
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url('./assets/uploads/images/carousel/hands-2847508_1920.jpg');
+        "
+      >
+        <div class="gradient"></div>
+        <div class="info-container">
+          <h3 class="header">#nospodemos</h3>
+          <h2 class="text">Capacitação profissional</h2>
+          <button>Quer saber como ajudar!</button>
+        </div>
+      </div>
+
+      <div
+        class="carousel-cell"
+        style="
+          background-image: url('./assets/uploads/images/carousel/kids-2237119_1920.jpg');
+        "
+      >
+        <div class="gradient"></div>
+        <div class="info-container">
+          <h3 class="header">#business4tea</h3>
+          <h2 class="text">Empresas podem participar?</h2>
+          <button>Clique para saber mais!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fim carousel -->
+
+    <div id="what-is-tea" class="menu-spacing"></div>
+
+    <section class="intro main-bg section-content">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Mas afinal, o que é TEA?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ea
+            iusto dicta eius incidunt, repellendus fugiat ut id, minus velit cum
+            impedit distinctio facere. Vero veritatis sed praesentium vitae nam!
+          </p>
+        </div>
+
+        <div class="intro-img">
+          <img
+            src="./assets/uploads/images/svg/crianca-brincando-carrinho.svg"
+            alt="Imagem de alguem tendo uma ideia segurando uma lampada"
+          />
+        </div>
+      </div>
     </section>
-  </aside>
 
-  <div class="menu-spacing"></div>
+    <section id="about-project" class="secondary-bg section-content">
+      <div class="main-content top3-content">
+        <h2>Sobre o nosso projeto</h2>
+        <p>
+          The release of Apple Silicon-based Macs at the end of last year
+          generated a flurry of news coverage and some surprises at the
+          machine’s performance. This post details some background information
+          on the experience of porting Firefox to run natively on these CPUs.
+        </p>
+        <p>
+          We’ll start with some background on the Mac transition and give an
+          overview of Firefox internals that needed to know about the new
+          architecture, before moving on to the concept of Universal Binaries.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          doloribus. Laborum, exercitationem mollitia dolorum repudiandae,
+          consectetur, doloremque neque iusto architecto perferendis nihil
+          tenetur quidem ad officia inventore autem rem minus.
+        </p>
+      </div>
+    </section>
 
-  <!-- Carousel -->
+    <section class="grid-one main-bg section-content" id="objective">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">
+          O que nós
+          <span>Queremos?</span>
+        </h2>
+        <p class="grid-description">
+          Escolha em qual <span class="strong-text">perfil</span> você se
+          enquadra
+        </p>
 
-  <div class="hero-slider" carousel>
-
-    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/boy-1209964_1920.jpg');">
-        <div class="gradient"></div>
-        <div class="info-container">
-            <h3 class="header">#education4all</h3>
-            <h2 class="text">Educação para todos</h2>
-            <button>Conheça mais!</button>
+        <div class="grid">
+          <div class="grid-container-profiles">
+            <img
+              src="https://www.autismoemdia.com.br/wp-content/themes/autismoemdia/img/perfil-icons/Icon-pais-maes.svg"
+              alt=""
+            />
+            <article>
+              <h3>Para mães, pais e cuidadores</h3>
+              <a>Saiba mais!</a>
+            </article>
+          </div>
+          <div class="grid-container-profiles">
+            <img
+              src="https://www.autismoemdia.com.br/wp-content/themes/autismoemdia/img/perfil-icons/Icon-criancas.svg"
+              alt=""
+            />
+            <article>
+              <h3>Infantil e infantojuvenil</h3>
+              <a>Saiba mais!</a>
+            </article>
+          </div>
+          <div class="grid-container-profiles">
+            <img
+              src="https://www.autismoemdia.com.br/wp-content/themes/autismoemdia/img/perfil-icons/Icon-medicos.svg"
+              alt=""
+            />
+            <article>
+              <h3>Profissionais da saúde e de apoio</h3>
+              <a>Saiba mais!</a>
+            </article>
+          </div>
+          <div class="grid-container-profiles">
+            <img
+              src="https://www.autismoemdia.com.br/wp-content/themes/autismoemdia/img/perfil-icons/Icon-autistas.svg"
+              alt=""
+            />
+            <article>
+              <h3>Autistas</h3>
+              <a>Saiba mais!</a>
+            </article>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- Blog -->
+    <section id="blog" class="secondary-bg section-content">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading-white">Blog</h2>
+        <p class="grid-description" style="padding: 0">
+          Fique por dentro de tudo do TEAverso
+        </p>
 
-    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/girl-3194977_1920.jpg');">
-        <div class="gradient"></div>
-        <div class="info-container">
-            <h3 class="header">#somostodosiguais</h3>
-            <h2 class="text">O que nós queremos?</h2>
-            <button>Saiba mais sobre</button>
-        </div>
+        <div class="grid">
 
-    </div>
+          <a href="">
+            <div class="card">
+              <img
+              src="https://source.unsplash.com/random/360x360/?lonely"
+              alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi deserunt distinctio tenetur autem sequi, nulla cum
+                  veniam harum illum? Similique quod ut odio veritatis molestiae
+                  iure mollitia reiciendis illo aliquid.
+                </p>
+              </div>
+            </div>
+          </a>
 
-    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/hands-2847508_1920.jpg');">
-        <div class="gradient"></div>
-        <div class="info-container">
-            <h3 class="header">#nospodemos</h3>
-            <h2 class="text">Capacitação profissional</h2>
-            <button>Quer saber como ajudar!</button>
-        </div>
+          <a href="">
+            <div class="card">
+              <img
+              src="https://source.unsplash.com/random/360x360/?dark"
+              alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">Overview</p>
+              </div>
+            </div>
+          </a>
 
-    </div>
+          <a href="">
+            <div class="card">
+              <img
+              src="https://source.unsplash.com/random/360x360/?black"
+              alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">Overview</p>
+              </div>
+            </div>
+          </a>
 
-    <div class="carousel-cell" style="background-image: url('./assets/uploads/images/kids-2237119_1920.jpg');">
-        <div class="gradient"></div>
-        <div class="info-container">
-            <h3 class="header">#business4tea</h3>
-            <h2 class="text">Empresas podem participar?</h2>
-            <button>Clique para saber mais!</button>
-        </div>
+          <a href="">
+            <div class="card">
+              <img
+              src="https://source.unsplash.com/random/360x360/?universe"
+              alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">Overview</p>
+              </div>
+            </div>
+          </a>
 
-    </div>
+          <a href="">
+            <div class="card">
+              <img
+              src="https://source.unsplash.com/random/360x360/?tiger"
+              alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">Overview</p>
+              </div>
+            </div>
+          </a>
 
-</div>
+          <a href="">
+            <div class="card">
+              <img
+                src="https://source.unsplash.com/random/360x360/?leon"
+                alt="Imagem do Card"
+              />
+              <div class="card-content">
+                <h3>Title</h3>
+                <p class="overview" style="color: #000">Overview</p>
+              </div>
+            </div>
+          </a>
 
-  <!-- Fim carousel -->
 
-  <a class="back-to-top" href="#">➤</a>
-  <script src="./assets/js/main.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
-</body>
+          </div>
+      </div>
+    </section>
+    <!--  -->
 
+    <a class="back-to-top" href="#">➤</a>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/redirects.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+  </body>
 </html>

@@ -1,8 +1,9 @@
 :root {
     /* Criando váriaveis globais */
-    --primary-color: #0A1128;
+    --primary-color: #0e1735;
     --secondary-color: crimson;
     --white-color: #fff;
     --light-gray-color: #eee;
     --gap: 3rem;
+    --color-blue-cyan: #10eded;
 }

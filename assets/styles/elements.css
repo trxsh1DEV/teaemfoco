@@ -52,10 +52,12 @@ h6 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 p {
     margin-bottom: 3rem;
+    color: var(--white-color);
 }
 
 table {

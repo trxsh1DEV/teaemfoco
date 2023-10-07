@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  /* transform: translateY(-20px); */
+  transform: translate(-3%, -2%) scale(1.15) rotate(5deg);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-content .overview {
+  font-size: 14px;
+  margin-top: 5px;
+}

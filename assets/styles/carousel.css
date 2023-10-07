@@ -63,7 +63,7 @@
     transition: all 0.3s ease;
 }
 
-.hero-slider .carousel-cell .info-container button:hover {
+.hero-slider .carousel-cell .info-container button:hover{
     background: #fff;
     color: #000;
     font-weight: bold;
