@@ -32,7 +32,7 @@
   color: var(--white-color);
 }
 
-.intro-text-content p{
+.intro-text-content p {
   color: var(--white-color)
 }
 
@@ -50,10 +50,11 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
+  color: var(--white-color)
 }
 
-.top3-content{
-  color: var(--white-color)
+.top3-content p {
+  font-size: 26px;
 }
 
 /* Section grid 1 */
@@ -67,16 +68,22 @@
 
 .grid-main-heading {
   margin-bottom: 1rem;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  color: #fff;
+  font-size: 5rem;
 }
 
-.grid-main-heading-white{
+.grid-main-heading-white {
   margin-bottom: 1rem;
   color: var(--white-color)
 }
 
+.grid-main-heading span:first-child {
+  color: rgb(250, 171, 26)
+}
+
 .grid-main-heading span {
-  color: yellow
+  color: aqua
 }
 
 .grid-description {
@@ -84,7 +91,7 @@
   font-weight: 500;
 }
 
-.strong-text{
+.strong-text {
   text-transform: uppercase;
   color: rgb(249, 54, 174);
   background-color: #444;
@@ -98,7 +105,7 @@
   gap: var(--gap);
 }
 
-.grid-container-profiles{
+.grid-container-profiles {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,11 +131,12 @@
 }
 
 .grid-container-profiles:hover:nth-child(1) {
-  box-shadow: 11px 11px 25px 0px rgb(245, 165, 221);;
+  box-shadow: 11px 11px 25px 0px rgb(245, 165, 221);
+  ;
 }
 
 .grid-container-profiles:hover:nth-child(2) {
-  box-shadow: 11px 11px 30px 0px #e6e600;
+  box-shadow: 11px 11px 30px 0px #ffff17;
 }
 
 .grid-container-profiles:hover:nth-child(3) {
@@ -143,24 +151,30 @@
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-10px);
   }
 }
+
 /*  */
 
 .grid-container-profiles:nth-child(1) h3 {
   color: rgb(245, 165, 221);
 }
-.grid-container-profiles:nth-child(2) h3{
-  color: #e6e600;
+
+.grid-container-profiles:nth-child(2) h3 {
+  color: #e3e300;
 }
+
 .grid-container-profiles:nth-child(3) h3 {
   color: orange;
 }
+
 .grid-container-profiles:nth-child(4) h3 {
   color: cornflowerblue;
 }
