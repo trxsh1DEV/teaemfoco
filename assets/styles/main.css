@@ -136,16 +136,14 @@
 }
 
 .grid-container-profiles:hover:nth-child(2) {
-  box-shadow: 11px 11px 30px 0px #ffff17;
+  box-shadow: 11px 11px 25px 0px cornflowerblue;
 }
 
 .grid-container-profiles:hover:nth-child(3) {
   box-shadow: 11px 11px 30px 0px orange;
 }
 
-.grid-container-profiles:hover:nth-child(4) {
-  box-shadow: 11px 11px 25px 0px cornflowerblue;
-}
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -168,16 +166,13 @@
 }
 
 .grid-container-profiles:nth-child(2) h3 {
-  color: #e3e300;
+  color: cornflowerblue;
 }
 
 .grid-container-profiles:nth-child(3) h3 {
   color: orange;
 }
 
-.grid-container-profiles:nth-child(4) h3 {
-  color: cornflowerblue;
-}
 
 .grid h3 {
   font-size: 2rem;

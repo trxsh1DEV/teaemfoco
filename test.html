@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Expand</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      cursor: pointer;
+    }
+    .image-container img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .expandable-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+    }
+
+    .image-container.expanded .expandable-image {
+      transform: scale(1);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .image-container.expanded .overlay {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="image-container">
+      <img
+        src="./assets/uploads/images/img/blog1.jpeg"
+        alt="Imagem"
+        class="expandable-image"
+        id="expandedImage"
+      />
+      <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const imageContainer = document.querySelector(".image-container");
+    const expandedImage = document.getElementById("expandedImage");
+
+    imageContainer.addEventListener("click", function () {
+      imageContainer.classList.toggle("expanded");
+    });
+  });
+</script>
