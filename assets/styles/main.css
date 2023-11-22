@@ -48,6 +48,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   text-align: center;
   color: var(--white-color)
@@ -55,6 +56,11 @@
 
 .top3-content p {
   font-size: 26px;
+}
+
+.top3-content .big-text {
+  font-size: 35px;
+  width: 70vw;
 }
 
 /* Section grid 1 */
