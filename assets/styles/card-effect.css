@@ -58,9 +58,20 @@
 }
 
 #closeButton {
+  border: none;
   position: absolute;
-  bottom: 250px;
+  bottom: 50vh;
+  right: 28%;
   z-index: 4;
+  background-color: transparent;
+  font-size: 30px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+}
+
+#closeButton:hover {
+  transform: translateY(-20%) scale(1.2);
 }
 
 .card-content {
